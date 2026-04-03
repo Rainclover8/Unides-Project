@@ -1,17 +1,20 @@
 import fidanVerisi from '@/data/fidanlar.json';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { Calendar, TreePine, User, Heart } from 'lucide-react';
+import { Calendar, TreePine, Heart } from 'lucide-react';
 
-// SSG için statik yolları oluşturur
 export function generateStaticParams() {
   return fidanVerisi.map((fidan) => ({
     id: fidan.id,
   }));
 }
 
-export default function FidanPage({ params }: { params: { id: string } }) {
-  const fidan = fidanVerisi.find((f) => f.id === params.id);
+// DİKKAT: Buradaki params kısmı Promise olarak güncellendi (Next.js 15 Kuralı)
+export default async function FidanPage({ params }: { params: Promise<{ id: string }> }) {
+  
+  // URL'den gelen ID'yi asenkron olarak bekleyip alıyoruz
+  const resolvedParams = await params;
+  const fidan = fidanVerisi.find((f) => f.id === resolvedParams.id);
 
   if (!fidan) {
     notFound();
@@ -19,7 +22,7 @@ export default function FidanPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="min-h-screen bg-slate-50 p-4 md:p-10 flex justify-center items-start md:items-center">
-      <div className="w-full max-w-xl bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-slate-100">
+      <div className="w-full max-w-xl bg-white rounded-4xl shadow-2xl overflow-hidden border border-slate-100">
         
         {/* Fotoğraf Alanı */}
         <div className="relative h-72 md:h-96 w-full">
@@ -45,7 +48,7 @@ export default function FidanPage({ params }: { params: { id: string } }) {
           </div>
           
           <h1 className="text-3xl font-bold text-slate-800 mb-2 leading-tight">
-            Bu fidan <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">{fidan.diken_adi}</span> tarafından hayata kazandırıldı.
+            Bu fidan <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600">{fidan.diken_adi}</span> tarafından hayata kazandırıldı.
           </h1>
           
           {fidan.mesaj && (

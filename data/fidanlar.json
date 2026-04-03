@@ -26,4 +26,14 @@
     "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
     "foto_url": "/images/fidanlar/fidan-001.jpg"
   }
+  ,
+  {
+    "id": "fidan-004",
+    "fidan_no": 4,
+    "diken_adi": "Ali İsmail",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2024-05-21",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": "/images/fidanlar/fidan-001.jpg"
+  }
 ]
