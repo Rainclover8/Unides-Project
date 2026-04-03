@@ -93,10 +93,10 @@ export default function AdminControlPage() {
     <div className="p-8 bg-slate-50 min-h-screen text-slate-900">
       <div className="mb-12 max-w-5xl mx-auto flex items-center justify-between bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
         <div>
-          <h1 className="text-3xl font-bold mb-1 flex items-center gap-2 text-slate-950">
+          <a className="text-3xl font-bold mb-1 flex items-center gap-2 text-slate-950" href='/'>
             <CheckCircle2 className="w-7 h-7 text-green-500" />
             3D Baskı QR Kod Yönetim Merkezi
-          </h1>
+          </a>
           <p className="text-slate-600 text-sm max-w-2xl">
             Sisteminizde {fidanVerisi.length} fidan kayıtlıdır. Bütün QR kodları 3D modelleme programları için vektörel SVG formatında indirebilirsiniz.
           </p>
