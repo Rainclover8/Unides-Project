@@ -1,8 +1,8 @@
 import fidanVerisi from '@/data/fidanlar.json';
 import Image from 'next/image';
+import Link from 'next/link'; // Sayfalar arası hızlı geçiş için ekledik
 import { notFound } from 'next/navigation';
-// ImageIcon olarak import ettik ki Next.js'in kendi Image bileşeniyle isimleri çakışmasın
-import { Calendar, TreePine, Heart, Image as ImageIcon } from 'lucide-react';
+import { Calendar, TreePine, Heart, Image as ImageIcon, Home } from 'lucide-react'; // Home ikonunu ekledik
 
 export function generateStaticParams() {
   return fidanVerisi.map((fidan) => ({
@@ -36,14 +36,12 @@ export default async function FidanPage({ params }: { params: Promise<{ id: stri
               priority
             />
           ) : (
-            /* Eğer fotoğraf yoksa bu şık yer tutucuyu göster */
             <div className="flex flex-col items-center justify-center text-slate-400">
               <ImageIcon className="w-12 h-12 mb-3 opacity-50" />
               <span className="text-sm font-medium">Bu fidan için henüz görsel eklenmemiş</span>
             </div>
           )}
 
-          {/* Sağ üstteki fidan numarası her zaman gözüksün */}
           <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full shadow-sm">
             <span className="text-sm font-bold text-slate-700">No: {fidan.fidan_no}</span>
           </div>
@@ -59,7 +57,7 @@ export default async function FidanPage({ params }: { params: Promise<{ id: stri
           </div>
           
           <h1 className="text-3xl font-bold text-slate-800 mb-2 leading-tight">
-            Bu fidan <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">{fidan.diken_adi}</span> tarafından hayata kazandırıldı.
+            Bu fidan <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600">{fidan.diken_adi}</span> tarafından hayata kazandırıldı.
           </h1>
           
           {fidan.mesaj && (
@@ -82,6 +80,18 @@ export default async function FidanPage({ params }: { params: Promise<{ id: stri
               <div className="text-base font-bold text-slate-700">{fidan.dikim_tarihi}</div>
             </div>
           </div>
+
+          {/* Ana Sayfaya Dön Butonu */}
+          <div className="mt-8 pt-6 border-t border-slate-100">
+            <Link 
+              href="/" 
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-xl font-semibold transition-colors border border-slate-200"
+            >
+              <Home className="w-5 h-5 text-slate-500" />
+              Proje Ana Sayfasına Dön
+            </Link>
+          </div>
+
         </div>
       </div>
     </div>
