@@ -28,7 +28,7 @@ export default async function FidanPage({ params }: { params: Promise<{ id: stri
         <div className="relative h-72 md:h-96 w-full">
           <Image 
             src={fidan.foto_url ? fidan.foto_url : 'Görsel Bulunamadı'} 
-            alt={`${fidan.diken_adi} fidanı`}
+            alt={`${fidan.diken_adi ? fidan.diken_adi : 'Bilinmeyen'} fidanı`}
             fill
             className="object-cover"
             priority
