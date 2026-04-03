@@ -1,7 +1,8 @@
 import fidanVerisi from '@/data/fidanlar.json';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { Calendar, TreePine, Heart } from 'lucide-react';
+// ImageIcon olarak import ettik ki Next.js'in kendi Image bileşeniyle isimleri çakışmasın
+import { Calendar, TreePine, Heart, Image as ImageIcon } from 'lucide-react';
 
 export function generateStaticParams() {
   return fidanVerisi.map((fidan) => ({
@@ -9,10 +10,8 @@ export function generateStaticParams() {
   }));
 }
 
-// DİKKAT: Buradaki params kısmı Promise olarak güncellendi (Next.js 15 Kuralı)
 export default async function FidanPage({ params }: { params: Promise<{ id: string }> }) {
   
-  // URL'den gelen ID'yi asenkron olarak bekleyip alıyoruz
   const resolvedParams = await params;
   const fidan = fidanVerisi.find((f) => f.id === resolvedParams.id);
 
@@ -25,14 +24,26 @@ export default async function FidanPage({ params }: { params: Promise<{ id: stri
       <div className="w-full max-w-xl bg-white rounded-4xl shadow-2xl overflow-hidden border border-slate-100">
         
         {/* Fotoğraf Alanı */}
-        <div className="relative h-72 md:h-96 w-full">
-          <Image 
-            src={fidan.foto_url ? fidan.foto_url : 'Görsel Bulunamadı'} 
-            alt={`${fidan.diken_adi ? fidan.diken_adi : 'Bilinmeyen'} fidanı`}
-            fill
-            className="object-cover"
-            priority
-          />
+        <div className="relative h-72 md:h-96 w-full bg-slate-100 flex items-center justify-center">
+          
+          {/* Eğer fotoğraf varsa bunu göster */}
+          {fidan.foto_url ? (
+            <Image 
+              src={fidan.foto_url} 
+              alt={`${fidan.diken_adi || 'Bilinmeyen'} fidanı`}
+              fill
+              className="object-cover"
+              priority
+            />
+          ) : (
+            /* Eğer fotoğraf yoksa bu şık yer tutucuyu göster */
+            <div className="flex flex-col items-center justify-center text-slate-400">
+              <ImageIcon className="w-12 h-12 mb-3 opacity-50" />
+              <span className="text-sm font-medium">Bu fidan için henüz görsel eklenmemiş</span>
+            </div>
+          )}
+
+          {/* Sağ üstteki fidan numarası her zaman gözüksün */}
           <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full shadow-sm">
             <span className="text-sm font-bold text-slate-700">No: {fidan.fidan_no}</span>
           </div>
@@ -48,7 +59,7 @@ export default async function FidanPage({ params }: { params: Promise<{ id: stri
           </div>
           
           <h1 className="text-3xl font-bold text-slate-800 mb-2 leading-tight">
-            Bu fidan <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600">{fidan.diken_adi}</span> tarafından hayata kazandırıldı.
+            Bu fidan <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">{fidan.diken_adi}</span> tarafından hayata kazandırıldı.
           </h1>
           
           {fidan.mesaj && (

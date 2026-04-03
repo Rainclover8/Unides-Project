@@ -6,7 +6,7 @@
     "agac_turu": "Mavi Ladin",
     "dikim_tarihi": "2024-05-20",
     "mesaj": "Geleceğe bırakılan ufak bir nefes.",
-    "foto_url": "/images/fidanlar/fidan-001.jpg"
+    "foto_url": ""
   },
   {
     "id": "fidan-002",
@@ -15,7 +15,7 @@
     "agac_turu": "Çınar",
     "dikim_tarihi": "2024-05-21",
     "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
-    "foto_url": "/images/fidanlar/fidan-001.jpg"
+    "foto_url": ""
   },
   {
     "id": "fidan-003",
@@ -24,7 +24,7 @@
     "agac_turu": "Çınar",
     "dikim_tarihi": "2024-05-21",
     "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
-    "foto_url": "/images/fidanlar/fidan-001.jpg"
+    "foto_url": ""
   }
   ,
   {
@@ -34,6 +34,6 @@
     "agac_turu": "Meşe",
     "dikim_tarihi": "2024-05-21",
     "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
-    "foto_url": "/images/fidanlar/fidan-001.jpg"
+    "foto_url": ""
   }
 ]
