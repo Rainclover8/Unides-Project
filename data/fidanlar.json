@@ -1,0 +1,29 @@
+[
+  {
+    "id": "fidan-001",
+    "fidan_no": 1,
+    "diken_adi": "Baran Çiçek",
+    "agac_turu": "Mavi Ladin",
+    "dikim_tarihi": "2024-05-20",
+    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "foto_url": "/images/fidanlar/fidan-001.jpg"
+  },
+  {
+    "id": "fidan-002",
+    "fidan_no": 2,
+    "diken_adi": "Biri",
+    "agac_turu": "Çınar",
+    "dikim_tarihi": "2024-05-21",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": "/images/fidanlar/fidan-001.jpg"
+  },
+  {
+    "id": "fidan-003",
+    "fidan_no": 3,
+    "diken_adi": "Miraç Çabuk",
+    "agac_turu": "Çınar",
+    "dikim_tarihi": "2024-05-21",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": "/images/fidanlar/fidan-001.jpg"
+  }
+]
