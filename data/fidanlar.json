@@ -2,37 +2,180 @@
   {
     "id": "fidan-001",
     "fidan_no": 1,
-    "diken_adi": "Baran Çiçek",
-    "agac_turu": "Mavi Ladin",
-    "dikim_tarihi": "2024-05-20",
+    "diken_adi": "Baran Çiçek (Öğrenci)",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2026-03-18",
     "mesaj": "Geleceğe bırakılan ufak bir nefes.",
     "foto_url": ""
   },
   {
     "id": "fidan-002",
     "fidan_no": 2,
-    "diken_adi": "Ahmet Enes Kurtulmuş",
-    "agac_turu": "Çınar",
-    "dikim_tarihi": "2024-05-21",
+    "diken_adi": "Yüksek Okul Sekreteri Yılmaz Bekliyen",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2026-03-18",
     "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
     "foto_url": ""
   },
   {
     "id": "fidan-003",
     "fidan_no": 3,
-    "diken_adi": "Miraç Çabuk",
-    "agac_turu": "Çınar",
-    "dikim_tarihi": "2024-05-21",
+    "diken_adi": "Hüseyin Miraç Çabuk (Öğrenci)",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2026-03-18",
     "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
     "foto_url": ""
-  }
-  ,
+  },
   {
     "id": "fidan-004",
     "fidan_no": 4,
-    "diken_adi": "Ali İsmail",
+    "diken_adi": "Sude Melek Tonyalıoğlu (Öğrenci)",
     "agac_turu": "Meşe",
-    "dikim_tarihi": "2024-05-21",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-005",
+    "fidan_no": 5,
+    "diken_adi": "Doç. Dr. ALİ ERDUMAN",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-006",
+    "fidan_no": 6,
+    "diken_adi": "Doç. Dr. YAVUZ SARI",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-007",
+    "fidan_no": 7,
+    "diken_adi": "Dr. Öğr. Üyesi SELÇUK ŞİRİN",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-008",
+    "fidan_no": 8,
+    "diken_adi": "Öğr. Gör. DİLEK TÜRK",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-009",
+    "fidan_no": 9,
+    "diken_adi": "Öğr. Gör. ENGİN KILIÇ",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-010",
+    "fidan_no": 10,
+    "diken_adi": "Öğr. Gör. NUR GAZANFER",
+    "agac_turu": "Meşe",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-011",
+    "fidan_no": 11,
+    "diken_adi": "Öğr. Gör. SEVİM ADİGE",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-012",
+    "fidan_no": 12,
+    "diken_adi": "Öğr. Gör. ŞEYMA YURTTAŞ",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-013",
+    "fidan_no": 13,
+    "diken_adi": "Öğr. Gör. TUĞBA TAK SAVAŞ",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-014",
+    "fidan_no": 14,
+    "diken_adi": "Öğr. Gör. ÜMMEHAN ERDİL ŞAHİN",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-015",
+    "fidan_no": 15,
+    "diken_adi": "İDRİS KAYIHAN (Temizlik Personeli)",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-016",
+    "fidan_no": 16,
+    "diken_adi": "BERİVAN YÜREKLİ (Temizlik Personeli)",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-017",
+    "fidan_no": 17,
+    "diken_adi": "SEZİN ERTİK (Bölüm Sekreteri)",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-018",
+    "fidan_no": 18,
+    "diken_adi": "GÖNÜL BEKLİYEN (Yazı İşleri)",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-019",
+    "fidan_no": 19,
+    "diken_adi": "EMİNE KAPLAN (Sekreter)",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "foto_url": ""
+  },
+  {
+    "id": "fidan-020",
+    "fidan_no": 20,
+    "diken_adi": "Fadime Çimen (Öğrenci)",
+    "agac_turu": "Manolya",
+    "dikim_tarihi": "2026-03-18",
     "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
     "foto_url": ""
   }
