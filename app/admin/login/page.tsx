@@ -24,8 +24,24 @@ export default function AdminLoginPage() {
       return;
     }
 
+    let reason = '';
+    try {
+      const data = await response.json();
+      reason = data?.reason || '';
+    } catch {
+      reason = '';
+    }
+
     setPending(false);
     setCode('');
+    if (reason === 'missing_session_token') {
+      setError('Sunucu ayari eksik. ADMIN_SESSION_TOKEN tanimlanmali.');
+      return;
+    }
+    if (reason === 'missing_code_or_env') {
+      setError('Sunucu erisim kodu ayarlanmamis. Vercel env kontrol edin.');
+      return;
+    }
     setError('Kod hatali. Lutfen tekrar deneyin.');
   };
 
