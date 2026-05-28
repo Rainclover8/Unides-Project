@@ -62,7 +62,7 @@ export default async function FidanPage({ params }: { params: Promise<{ id: stri
           
           {fidan.mesaj && (
             <p className="text-slate-500 italic mt-4 mb-8 text-lg border-l-4 border-blue-200 pl-4">
-              "{fidan.mesaj}"
+              &quot;{fidan.mesaj}&quot;
             </p>
           )}
 

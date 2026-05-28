@@ -1,35 +1,18 @@
 'use client';
 import { QRCodeSVG } from 'qrcode.react';
 import fidanVerisi from '@/data/fidanlar.json';
-import { useEffect, useState, useRef } from 'react';
-import { Download, Lock, CheckCircle2, AlertCircle } from 'lucide-react';
-
-// SADECE SENİN BİLECEĞİN GİRİŞ KODU
-const ADMIN_ACCESS_CODE = "1923"; 
+import { useMemo } from 'react';
+import Link from 'next/link';
+import { Download, CheckCircle2, LogOut } from 'lucide-react';
 
 export default function AdminControlPage() {
-  const [baseUrl, setBaseUrl] = useState('');
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [enteredCode, setEnteredCode] = useState('');
-  const [accessError, setAccessError] = useState(false);
-  const codeInputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    setBaseUrl(window.location.origin);
-  }, []);
-
-  // Güvenlik Kodu Kontrolü
-  const handleAccessSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (enteredCode === ADMIN_ACCESS_CODE) {
-      setIsAuthenticated(true);
-      setAccessError(false);
-    } else {
-      setAccessError(true);
-      setEnteredCode('');
-      codeInputRef.current?.focus();
-    }
-  };
+  const baseUrl = useMemo(
+    () =>
+      typeof window !== 'undefined'
+        ? window.location.origin
+        : process.env.NEXT_PUBLIC_SITE_URL || '',
+    []
+  );
 
   // SVG'yi bilgisayara indirme (3D Baskı İçin)
   const handleDownloadSVG = (fidanId: string, fidanNo: number) => {
@@ -51,59 +34,31 @@ export default function AdminControlPage() {
 
   if (!baseUrl) return null;
 
-  // --- GİRİŞ EKRANI (GÜVENLİK) ---
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-slate-900 flex items-center justify-center p-6 text-slate-100">
-        <form onSubmit={handleAccessSubmit} className="bg-slate-800 p-10 rounded-3xl shadow-2xl border border-slate-700 max-w-md w-full text-center">
-          <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-slate-700">
-            <Lock className="w-8 h-8 text-white" />
-          </div>
-          <h1 className="text-2xl font-extrabold mb-3">Admin Erişimi</h1>
-          <p className="text-slate-400 mb-8 text-sm">QR Kod Üretim Paneline erişmek için lütfen 4 haneli kodu giriniz.</p>
-          
-          <input 
-            type="password"
-            maxLength={4}
-            value={enteredCode}
-            onChange={(e) => setEnteredCode(e.target.value)}
-            ref={codeInputRef}
-            placeholder="****"
-            className="w-full text-center text-4xl font-bold tracking-[1em] bg-slate-700 border-2 border-slate-600 focus:border-blue-500 focus:ring-0 rounded-xl py-3 mb-6 transition outline-none"
-            autoFocus
-          />
-
-          {accessError && (
-            <div className="flex items-center gap-2 justify-center text-red-400 mb-6 bg-red-950 p-3 rounded-lg text-sm">
-              <AlertCircle className="w-4 h-4" />
-              Kodu yanlış girdiniz, lütfen tekrar deneyin.
-            </div>
-          )}
-
-          <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3.5 rounded-xl font-bold transition">
-            Paneli Aç
-          </button>
-        </form>
-      </div>
-    );
-  }
-
   // --- ASIL ADMİN PANELİ ---
   return (
-    <div className="p-8 bg-slate-50 min-h-screen text-slate-900">
-      <div className="mb-12 max-w-5xl mx-auto flex items-center justify-between bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+    <div className="p-4 sm:p-8 bg-slate-50 min-h-screen text-slate-900">
+      <div className="mb-8 sm:mb-12 max-w-5xl mx-auto flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-100">
         <div>
-          <a className="text-3xl font-bold mb-1 flex items-center gap-2 text-slate-950" href='/'>
+          <Link className="text-3xl font-bold mb-1 flex items-center gap-2 text-slate-950" href='/'>
             <CheckCircle2 className="w-7 h-7 text-green-500" />
             3D Baskı QR Kod Yönetim Merkezi
-          </a>
+          </Link>
           <p className="text-slate-600 text-sm max-w-2xl">
             Sisteminizde {fidanVerisi.length} fidan kayıtlıdır. Bütün QR kodları 3D modelleme programları için vektörel SVG formatında indirebilirsiniz.
           </p>
         </div>
+        <form action="/api/admin/logout" method="post">
+          <button
+            type="submit"
+            className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          >
+            <LogOut className="w-4 h-4" />
+            Cikis yap
+          </button>
+        </form>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 max-w-425 mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 max-w-425 mx-auto">
         {fidanVerisi.map((fidan) => {
           const fidatProfilUrl = `${baseUrl}/fidan/${fidan.id}`;
 
