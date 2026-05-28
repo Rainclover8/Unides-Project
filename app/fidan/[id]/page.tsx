@@ -4,6 +4,27 @@ import Link from 'next/link'; // Sayfalar arası hızlı geçiş için ekledik
 import { notFound } from 'next/navigation';
 import { Calendar, TreePine, Heart, Image as ImageIcon, Home } from 'lucide-react'; // Home ikonunu ekledik
 
+const shimmer = (w: number, h: number) => `
+<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="${w}" height="${h}" fill="#e2e8f0"/>
+  <rect id="shine" width="${w}" height="${h}" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="${w}" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e2e8f0"/>
+      <stop offset="0.45" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <animate xlink:href="#shine" attributeName="x" from="-${w}" to="${w}" dur="1.1s" repeatCount="indefinite" />
+</svg>`;
+
+const toBase64 = (str: string) =>
+  typeof window === 'undefined'
+    ? Buffer.from(str).toString('base64')
+    : window.btoa(str);
+
+const shimmerDataUrl = `data:image/svg+xml;base64,${toBase64(shimmer(1200, 800))}`;
+
 export function generateStaticParams() {
   return fidanVerisi.map((fidan) => ({
     id: fidan.id,
@@ -32,8 +53,10 @@ export default async function FidanPage({ params }: { params: Promise<{ id: stri
               src={fidan.foto_url} 
               alt={`${fidan.diken_adi || 'Bilinmeyen'} fidanı`}
               fill
-              className="object-cover"
+              className="object-cover transition-opacity duration-500"
               priority
+              placeholder="blur"
+              blurDataURL={shimmerDataUrl}
             />
           ) : (
             <div className="flex flex-col items-center justify-center text-slate-400">

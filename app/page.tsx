@@ -10,7 +10,8 @@ import {
 import fidanVerisi from "@/data/fidanlar.json";
 
 export default function Home() {
-  const toplamFidan = fidanVerisi.length;
+  const toplamFidan = 250;
+  const toplamQRliFidan = fidanVerisi.length;
   const qrliFidanlar = [...fidanVerisi]
     .sort((a, b) => b.fidan_no - a.fidan_no)
     .slice(0, 6);
@@ -57,7 +58,7 @@ export default function Home() {
               <div className="mb-2 inline-flex rounded-xl bg-white p-2 text-blue-600 shadow-sm">
                 <QrCode className="h-5 w-5" />
               </div>
-              <div className="text-3xl font-bold text-slate-900">{toplamFidan}</div>
+              <div className="text-3xl font-bold text-slate-900">{toplamQRliFidan}</div>
               <p className="mt-1 text-sm text-slate-600">QR hazir fidan profili</p>
             </div>
             <div className="surface-3d rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:col-span-2 md:col-span-1">
