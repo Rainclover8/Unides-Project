@@ -6,16 +6,39 @@ import { Calendar, TreePine, Heart, Image as ImageIcon, Home } from 'lucide-reac
 
 const shimmer = (w: number, h: number) => `
 <svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="${w}" height="${h}" fill="#e2e8f0"/>
-  <rect id="shine" width="${w}" height="${h}" fill="url(#g)"/>
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="${w}" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#e2e8f0"/>
-      <stop offset="0.45" stop-color="#f8fafc"/>
-      <stop offset="1" stop-color="#e2e8f0"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="${w}" y2="${h}" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a"/>
+      <stop offset="0.5" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0b1120"/>
     </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="${w}" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="0.5" stop-color="#34d399" stop-opacity="0.35"/>
+      <stop offset="0.7" stop-color="#a78bfa" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#0f172a" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="orbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(${w *
+      0.22} ${h * 0.28}) rotate(90) scale(${h * 0.26} ${w * 0.2})">
+      <stop stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(${w *
+      0.8} ${h * 0.7}) rotate(90) scale(${h * 0.3} ${w * 0.22})">
+      <stop stop-color="#34d399" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
   </defs>
+  <rect width="${w}" height="${h}" fill="url(#bg)"/>
+  <rect width="${w}" height="${h}" fill="url(#orbA)"/>
+  <rect width="${w}" height="${h}" fill="url(#orbB)"/>
+  <rect id="shine" x="-${w}" width="${w}" height="${h}" fill="url(#g)"/>
+  <circle cx="${w * 0.5}" cy="${h * 0.5}" r="${Math.min(w, h) * 0.085}" fill="#f8fafc" fill-opacity="0.12"/>
+  <circle cx="${w * 0.5}" cy="${h * 0.5}" r="${Math.min(w, h) * 0.038}" fill="#f8fafc" fill-opacity="0.24"/>
   <animate xlink:href="#shine" attributeName="x" from="-${w}" to="${w}" dur="1.1s" repeatCount="indefinite" />
+  <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 ${w *
+    0.5} ${h * 0.5}" to="360 ${w * 0.5} ${h * 0.5}" dur="8s" repeatCount="indefinite"/>
 </svg>`;
 
 const toBase64 = (str: string) =>
