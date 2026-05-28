@@ -24,3 +24,64 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtle-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(16, 185, 129, 0);
+  }
+  50% {
+    transform: scale(1.015);
+    box-shadow: 0 10px 24px rgba(16, 185, 129, 0.18);
+  }
+}
+
+@keyframes loader-orbit {
+  0% {
+    transform: rotateX(58deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(58deg) rotateY(360deg) rotateZ(0deg);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 500ms ease-out both;
+}
+
+.animate-subtle-pulse {
+  animation: subtle-pulse 2.4s ease-in-out infinite;
+}
+
+.surface-3d {
+  transform-style: preserve-3d;
+  transition: transform 280ms ease, box-shadow 280ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .surface-3d:hover {
+    transform: perspective(1000px) translateY(-3px) rotateX(4deg) rotateY(-4deg);
+  }
+}
+
+.loader-orbit {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 9999px;
+  border: 3px solid rgba(255, 255, 255, 0.22);
+  border-top-color: rgba(16, 185, 129, 1);
+  border-bottom-color: rgba(96, 165, 250, 1);
+  animation: loader-orbit 900ms linear infinite;
+}

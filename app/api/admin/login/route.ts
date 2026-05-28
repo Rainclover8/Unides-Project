@@ -23,7 +23,10 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false }, { status: 401 });
   }
 
-  const token = process.env.ADMIN_SESSION_TOKEN ?? 'local-dev-admin-session';
+  const token = process.env.ADMIN_SESSION_TOKEN ?? '';
+  if (!token) {
+    return NextResponse.json({ ok: false }, { status: 500 });
+  }
   const response = NextResponse.json({ ok: true });
 
   response.cookies.set({

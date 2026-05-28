@@ -15,9 +15,9 @@ export function middleware(request: NextRequest) {
   }
 
   const sessionCookie = request.cookies.get(ADMIN_COOKIE)?.value;
-  const expectedToken = process.env.ADMIN_SESSION_TOKEN ?? 'local-dev-admin-session';
+  const expectedToken = process.env.ADMIN_SESSION_TOKEN;
 
-  if (!sessionCookie || sessionCookie !== expectedToken) {
+  if (!expectedToken || !sessionCookie || sessionCookie !== expectedToken) {
     const loginUrl = new URL('/admin/login', request.url);
     return NextResponse.redirect(loginUrl);
   }

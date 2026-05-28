@@ -16,11 +16,12 @@ export default function Home() {
     .slice(0, 6);
 
   return (
-    <main className="min-h-screen bg-linear-to-b from-slate-50 via-white to-emerald-50/60 text-slate-900">
+    <main className="min-h-screen overflow-x-hidden bg-linear-to-b from-slate-50 via-white to-emerald-50/60 text-slate-900">
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[420px] bg-[radial-gradient(circle_at_20%_20%,rgba(16,185,129,0.2),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(59,130,246,0.2),transparent_35%)]" />
       <section className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 py-8 sm:px-6 sm:py-12 md:gap-10 md:py-20">
-        <div className="grid gap-6 rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-xl shadow-slate-200/60 backdrop-blur sm:p-8 md:grid-cols-[1.4fr_1fr] md:gap-8 md:p-12">
+        <div className="surface-3d animate-fade-up grid gap-6 rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-xl shadow-slate-200/60 backdrop-blur sm:p-8 md:grid-cols-[1.4fr_1fr] md:gap-8 md:p-12">
           <div>
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 animate-subtle-pulse">
               <School className="h-4 w-4" />
               SUBU Hendek MYO - Dijital Fidanlik
             </div>
@@ -45,21 +46,21 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1">
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <div className="surface-3d rounded-2xl border border-slate-200 bg-slate-50 p-5">
               <div className="mb-2 inline-flex rounded-xl bg-white p-2 text-emerald-600 shadow-sm">
                 <TreePine className="h-5 w-5" />
               </div>
               <div className="text-3xl font-bold text-slate-900">{toplamFidan}</div>
               <p className="mt-1 text-sm text-slate-600">Kayitli fidan sayisi</p>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <div className="surface-3d rounded-2xl border border-slate-200 bg-slate-50 p-5">
               <div className="mb-2 inline-flex rounded-xl bg-white p-2 text-blue-600 shadow-sm">
                 <QrCode className="h-5 w-5" />
               </div>
               <div className="text-3xl font-bold text-slate-900">{toplamFidan}</div>
               <p className="mt-1 text-sm text-slate-600">QR hazir fidan profili</p>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:col-span-2 md:col-span-1">
+            <div className="surface-3d rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:col-span-2 md:col-span-1">
               <div className="mb-2 inline-flex rounded-xl bg-white p-2 text-purple-600 shadow-sm">
                 <Leaf className="h-5 w-5" />
               </div>
@@ -71,7 +72,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
+        <section className="animate-fade-up rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
           <div className="mb-5 flex flex-col gap-3 sm:mb-6 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
             <div>
               <h2 className="text-2xl font-bold text-slate-900">Guncel QRli Fidanlar</h2>
@@ -93,7 +94,7 @@ export default function Home() {
               <Link
                 key={fidan.id}
                 href={`/fidan/${fidan.id}`}
-                className="group rounded-2xl border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-0.5 hover:border-emerald-300 hover:bg-white hover:shadow-md"
+                className="surface-3d group rounded-2xl border border-slate-200 bg-slate-50 p-5 transition hover:border-emerald-300 hover:bg-white hover:shadow-md"
               >
                 <div className="mb-4 flex items-center justify-between">
                   <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-slate-600">
