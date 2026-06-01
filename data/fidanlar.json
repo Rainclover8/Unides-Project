@@ -3,36 +3,36 @@
     "id": "fidan-001",
     "fidan_no": 1,
     "diken_adi": "Baran Çiçek (Öğrenci)",
-    "agac_turu": "Meşe",
+    "agac_turu": "Çınar",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "mesaj": "Bu topraklara kök salan her fidan, yarınlara umutla açan bir yapraktır.",
     "foto_url": "/images/fidanlar/BaranCicek.JPG"
   },
   {
     "id": "fidan-002",
     "fidan_no": 2,
     "diken_adi": "Yüksek Okul Sekreteri Yılmaz Bekliyen",
-    "agac_turu": "Meşe",
+    "agac_turu": "Çınar",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Gölgemiz uzun, köklerimiz sağlam, geleceğimiz aydınlık olsun.",
     "foto_url": "/images/fidanlar/Yılmaz_Bekliyen.JPG"
   },
   {
     "id": "fidan-003",
     "fidan_no": 3,
     "diken_adi": "Hüseyin Miraç Çabuk (Öğrenci)",
-    "agac_turu": "Meşe",
+    "agac_turu": "Çam",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Doğaya verdiğimiz her nefes, bize hayat olarak geri döner.",
     "foto_url": "/images/fidanlar/HüseyinMiraç.JPG"
   },
   {
     "id": "fidan-004",
     "fidan_no": 4,
     "diken_adi": "Sude Melek Tonyalıoğlu (Öğrenci)",
-    "agac_turu": "Meşe",
+    "agac_turu": "Zeytin",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Barışın ve bereketin simgesi bu fidan, sevgiyle büyüyüp asırlara meydan okusun.",
     "foto_url": "/images/fidanlar/SudeMelek.jpeg"
   },
   {
@@ -41,53 +41,52 @@
     "diken_adi": "Doç. Dr. ALİ ERDUMAN",
     "agac_turu": "Meşe",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "mesaj": "Bilgi gibi, bu fidan da zamanla büyüyecek ve etrafına ışık saçacak.",
     "foto_url": "/images/fidanlar/Ali_Erduman.JPG"
   },
   {
     "id": "fidan-006",
     "fidan_no": 6,
     "diken_adi": "Doç. Dr. YAVUZ SARI",
-    "agac_turu": "Meşe",
+    "agac_turu": "Ihlamur",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Yapraklarının rüzgardaki fısıltısı, geleceğin güzel günlerini müjdelesin.",
     "foto_url": "/images/fidanlar/Yavuz_Sarı.JPG"
   },
   {
     "id": "fidan-007",
     "fidan_no": 7,
     "diken_adi": "Dr. Öğr. Üyesi SELÇUK ŞİRİN",
-    "agac_turu": "Meşe",
+    "agac_turu": "Erguvan",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "mesaj": "Gelecek nesillere bırakabileceğimiz en güzel miras, yeşeren ve nefes alan bir dünyadır.",
     "foto_url": "/images/fidanlar/Selçuk.JPG"
   },
   {
     "id": "fidan-008",
     "fidan_no": 8,
     "diken_adi": "Öğr. Gör. DİLEK TÜRK",
-    "agac_turu": "Meşe",
+    "agac_turu": "Ladin",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Gökyüzüne uzanan her dal, umutlarımızın ve hayallerimizin ne kadar yüksek olduğunu gösterir.",
     "foto_url": "/images/fidanlar/Dilek_Türk.JPG"
   },
   {
     "id": "fidan-009",
     "fidan_no": 9,
     "diken_adi": "Öğr. Gör. ENGİN KILIÇ",
-    "agac_turu": "Meşe",
+    "agac_turu": "Sedir",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "mesaj": "Bugün toprağa ektiğimiz bu minik fidan, yarının dev ormanlarının ilk adımıdır.",
     "foto_url": "/images/fidanlar/Engin.JPG"
   },
-
   {
     "id": "fidan-010",
     "fidan_no": 10,
     "diken_adi": "Öğr. Gör. NUR GAZANFER",
-    "agac_turu": "Meşe",
+    "agac_turu": "Selvi",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Doğanın kalbine bıraktığımız bu küçük iz, asırlar boyu yeşermeye devam etsin.",
     "foto_url": "/images/fidanlar/Nur_Gazanfer.JPG"
   },
   {
@@ -96,61 +95,61 @@
     "diken_adi": "Öğr. Gör. SEVİM ADİGE",
     "agac_turu": "Manolya",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "mesaj": "Açan her çiçek, toprağın gökyüzüne bıraktığı güzel bir tebessümdür.",
     "foto_url": "/images/fidanlar/Sevim_Adige.JPG"
   },
   {
     "id": "fidan-012",
     "fidan_no": 12,
     "diken_adi": "Öğr. Gör. ŞEYMA YURTTAŞ",
-    "agac_turu": "Manolya",
+    "agac_turu": "Zeytin",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Kökleri geçmişimizde, dalları geleceğimizde olan bu fidan, sevgiyle hayat bulsun.",
     "foto_url": "/images/fidanlar/Şeyma_Yurttaş.JPG"
   },
   {
     "id": "fidan-013",
     "fidan_no": 13,
     "diken_adi": "Öğr. Gör. TUĞBA TAK SAVAŞ",
-    "agac_turu": "Manolya",
+    "agac_turu": "Çınar",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "mesaj": "Asırlık çınarların gölgesinde yeşerecek güzel ve aydınlık yarınlara...",
     "foto_url": "/images/fidanlar/Tuğba_Tak_Savaş.JPG"
   },
   {
     "id": "fidan-014",
     "fidan_no": 14,
     "diken_adi": "Öğr. Gör. ÜMMEHAN ERDİL ŞAHİN",
-    "agac_turu": "Manolya",
+    "agac_turu": "Meşe",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Sabırla büyüyen her ağaç, doğanın bize sunduğu en büyük bilgelik dersidir.",
     "foto_url": "/images/fidanlar/Ümmehan.JPG"
   },
   {
     "id": "fidan-015",
     "fidan_no": 15,
     "diken_adi": "İDRİS KAYIHAN (Temizlik Personeli)",
-    "agac_turu": "Manolya",
+    "agac_turu": "Çam",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "mesaj": "Toprağın şefkatiyle büyüyen bu fidan, memleketimize ve çocuklarımıza nefes olsun.",
     "foto_url": "/images/fidanlar/İdris.JPG"
   },
   {
     "id": "fidan-016",
     "fidan_no": 16,
     "diken_adi": "BERİVAN YÜREKLİ (Temizlik Personeli)",
-    "agac_turu": "Manolya",
+    "agac_turu": "Ihlamur",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Ellerimizle diktiğimiz bu fidan, yarınlara bıraktığımız sevgi dolu, kalıcı bir hatıradır.",
     "foto_url": "/images/fidanlar/Berivan.JPG"
   },
   {
     "id": "fidan-017",
     "fidan_no": 17,
     "diken_adi": "SEZİN ERTİK (Bölüm Sekreteri)",
-    "agac_turu": "Manolya",
+    "agac_turu": "Erguvan",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "mesaj": "Doğanın uyanışına şahitlik edecek bu ağaç, her bahar kampüsümüze renk katsın.",
     "foto_url": "/images/fidanlar/Sezin.JPG"
   },
   {
@@ -159,25 +158,35 @@
     "diken_adi": "GÖNÜL BEKLİYEN (Yazı İşleri)",
     "agac_turu": "Manolya",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Yeşilin her tonu, kalbimizdeki taze umutların doğadaki birer yansımasıdır.",
     "foto_url": "/images/fidanlar/Gönül.JPG"
   },
   {
     "id": "fidan-019",
     "fidan_no": 19,
     "diken_adi": "EMİNE KAPLAN (Sekreter)",
-    "agac_turu": "Manolya",
+    "agac_turu": "Sedir",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Geleceğe bırakılan ufak bir nefes.",
+    "mesaj": "Bugün toprağa emanet ettiğimiz küçük bir fidan, yarın gölgesinde huzurla dinlenilecek ulu bir ağaç olacak.",
     "foto_url": "/images/fidanlar/Emine_Kaplan.JPG"
   },
   {
     "id": "fidan-020",
     "fidan_no": 20,
     "diken_adi": "Fadime Çimen (Öğrenci)",
-    "agac_turu": "Manolya",
+    "agac_turu": "Ladin",
     "dikim_tarihi": "2026-03-18",
-    "mesaj": "Köklerimiz derine, dallarımız gökyüzüne.",
+    "mesaj": "Dalları sonsuz gökyüzüyle kucaklaşırken, kökleri bu bereketli topraklara sımsıkı sarılsın.",
     "foto_url": "/images/fidanlar/Fadime.JPG"
-  }
+  },
+  {
+  "id": "fidan-021",
+  "fidan_no": 21,
+  "diken_adi": "Öğr. Gör. BURCU ÇELİK",
+  "agac_turu": "Akçaağaç",
+  "dikim_tarihi": "2026-03-18",
+  "mesaj": "Her yeni fidan, dünyaya bırakılmış umut dolu yeşil bir imzadır.",
+  "foto_url": "/images/fidanlar/Burcu_Celik.png"
+}
 ]
+  
