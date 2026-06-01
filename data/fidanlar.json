@@ -126,13 +126,13 @@
     "foto_url": "/images/fidanlar/Ümmehan.JPG"
   },
   {
-    "id": "fidan-015",
-    "fidan_no": 15,
-    "diken_adi": "İDRİS KAYIHAN (Temizlik Personeli)",
-    "agac_turu": "Çam",
-    "dikim_tarihi": "2026-03-18",
-    "mesaj": "Toprağın şefkatiyle büyüyen bu fidan, memleketimize ve çocuklarımıza nefes olsun.",
-    "foto_url": "/images/fidanlar/İdris.JPG"
+   "id": "fidan-015",
+   "fidan_no": 15,
+  "diken_adi": "Öğr. Gör. BURCU ÇELİK",
+  "agac_turu": "Akçaağaç",
+  "dikim_tarihi": "2026-03-18",
+  "mesaj": "Her yeni fidan, dünyaya bırakılmış umut dolu yeşil bir imzadır.",
+  "foto_url": "/images/fidanlar/Burcu_Celik.png"
   },
   {
     "id": "fidan-016",
@@ -178,15 +178,6 @@
     "dikim_tarihi": "2026-03-18",
     "mesaj": "Dalları sonsuz gökyüzüyle kucaklaşırken, kökleri bu bereketli topraklara sımsıkı sarılsın.",
     "foto_url": "/images/fidanlar/Fadime.JPG"
-  },
-  {
-  "id": "fidan-021",
-  "fidan_no": 21,
-  "diken_adi": "Öğr. Gör. BURCU ÇELİK",
-  "agac_turu": "Akçaağaç",
-  "dikim_tarihi": "2026-03-18",
-  "mesaj": "Her yeni fidan, dünyaya bırakılmış umut dolu yeşil bir imzadır.",
-  "foto_url": "/images/fidanlar/Burcu_Celik.png"
-}
+  }
 ]
   

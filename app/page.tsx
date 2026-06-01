@@ -10,7 +10,7 @@ import {
 import fidanVerisi from "@/data/fidanlar.json";
 
 export default function Home() {
-  const toplamFidan = 250;
+  const toplamFidan = 150;
   const toplamQRliFidan = fidanVerisi.length;
   const qrliFidanlar = [...fidanVerisi]
     .sort((a, b) => b.fidan_no - a.fidan_no)
