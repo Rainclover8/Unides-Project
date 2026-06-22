@@ -31,8 +31,7 @@ export default function Home() {
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:mt-5 sm:text-lg">
               Her fidanin hikayesini, dikim bilgilerini ve QR ile ulasilabilen profil
-              sayfasini tek bir platformda sunuyoruz. Okulunuzda yayina hazir, modern
-              ve hizli bir deneyim.
+              sayfasini tek bir platformda sunuyoruz.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3 sm:mt-8">
