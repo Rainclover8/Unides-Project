@@ -26,6 +26,7 @@
     "mesaj": "Doğaya verdiğimiz her nefes, bize hayat olarak geri döner.",
     "foto_url": "/images/fidanlar/HüseyinMiraç.JPG"
   },
+
   {
     "id": "fidan-004",
     "fidan_no": 4,
@@ -35,6 +36,7 @@
     "mesaj": "Barışın ve bereketin simgesi bu fidan, sevgiyle büyüyüp asırlara meydan okusun.",
     "foto_url": "/images/fidanlar/SudeMelek.jpeg"
   },
+
   {
     "id": "fidan-005",
     "fidan_no": 5,
@@ -69,7 +71,7 @@
     "agac_turu": "Ladin",
     "dikim_tarihi": "2026-03-18",
     "mesaj": "Gökyüzüne uzanan her dal, umutlarımızın ve hayallerimizin ne kadar yüksek olduğunu gösterir.",
-    "foto_url": "/images/fidanlar/Dilek_Türk.JPG"
+    "foto_url": "/images/fidanlar/DilekTürk.JPG"
   },
   {
     "id": "fidan-009",
@@ -178,6 +180,69 @@
     "dikim_tarihi": "2026-03-18",
     "mesaj": "Dalları sonsuz gökyüzüyle kucaklaşırken, kökleri bu bereketli topraklara sımsıkı sarılsın.",
     "foto_url": "/images/fidanlar/Fadime.JPG"
+  },
+  {
+    "id": "fidan-021",
+    "fidan_no": 21,
+    "diken_adi": "Ali Fuat Boz (Rektör Yardımcısı)",
+    "agac_turu": "Ladin",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Toprağa düşen bu can, üniversitemizin yetiştirdiği her bir genç gibi yeşerip ülkesine nefes olsun.",
+    "foto_url": "/images/fidanlar/AliFuatBoz.jpeg"
+  },
+  {
+    "id": "fidan-022",
+    "fidan_no": 22,
+    "diken_adi": "Sinan Serdar Ozkan (Rektör Yardımcısı)",
+    "agac_turu": "Ladin",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Geleceğe bıraktığımız en anlamlı miras; kökleri derinde, gölgesi ferah ve yaprakları her daim yeşil kalan bir doğadır.",
+    "foto_url": "/images/fidanlar/SinanSerdarOzkan.jpeg"
+  },
+  {
+    "id": "fidan-023",
+    "fidan_no": 23,
+    "diken_adi": "Şükrü Bodur (2. Osb Yönetim Kurulu Başkanı)",
+    "agac_turu": "Ladin",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Üreten ve büyüyen şehrimizin toprağına emanet ettiğimiz bu fidan, sanayi ile doğanın kusursuz uyumunun simgesi olsun.",
+    "foto_url": "/images/fidanlar/ŞükrüBodur.jpeg"
+  },
+  {
+    "id": "fidan-024",
+    "fidan_no": 24,
+    "diken_adi": "Özge Akın Genç (OSB Müdür yardımcısı)",
+    "agac_turu": "Ladin",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Küçük bir fidanın koca bir ormana dönüşme umuduyla; doğaya, yaşama ve yarınlarımıza can katsın.",
+    "foto_url": "/images/fidanlar/ÖzgeAkınGenç.JPG"
+  },
+  {
+    "id": "fidan-025",
+    "fidan_no": 25,
+    "diken_adi": "Mehmet Sarıbıyık (Rektör)",
+    "agac_turu": "Ladin",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Bilimle aydınlanan zihinler gibi bu ladin de her geçen gün daha yükseğe uzansın; gölgesinde nice nesiller yetişsin.",
+    "foto_url": "/images/fidanlar/MehmetSarıbıyık.jpeg"
+  },
+  {
+    "id": "fidan-026",
+    "fidan_no": 26,
+    "diken_adi": "Oğuz Türkay (Rektör Yardımcısı)",
+    "agac_turu": "Ladin",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Yıllara meydan okuyan gövdesiyle her mevsim yeşil kalsın, bu topraklara kök salan her güzellik gibi kalıcı olsun.",
+    "foto_url": "/images/fidanlar/OğuzTürkay.jpeg"
+  },
+  {
+    "id": "fidan-027",
+    "fidan_no": 27,
+    "diken_adi": "Oktay Sevim (Bölge Müdürü)",
+    "agac_turu": "Ladin",
+    "dikim_tarihi": "2026-03-18",
+    "mesaj": "Bugün toprağa verdiğimiz can suyu, yarınların tertemiz havasına ve yeşil bir geleceğe dönüşsün.",
+    "foto_url": "/images/fidanlar/OktaySevim.jpeg"
   }
 ]
   
